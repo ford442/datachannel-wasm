@@ -1,6 +1,6 @@
 
 datachannel:
-	 em++ datachannel.cpp $(STDS) -fPIC -m64 -flto -flto=thin -pipe -ffp-contract=fast -fexcess-precision=fast \
+	 em++ datachannel.cpp $(STDS) -llibdatachannel-wasm -fPIC -m64 -flto -flto=thin -pipe -ffp-contract=fast -fexcess-precision=fast \
 	 -ffast-math -ffinite-math-only -funsafe-math-optimizations -fno-trapping-math -fno-math-errno \
 	 -mmutable-globals -mbulk-memory -matomics -mnontrapping-fptoint -msign-ext -fno-omit-frame-pointer \
 	 -mextended-const -O3 -fno-strict-aliasing $(SIMD_FLAGS) -sMEMORY64=1 -c -fno-rounding-math -fcx-limited-range -fassociative-math -freciprocal-math -fno-signed-zeros
