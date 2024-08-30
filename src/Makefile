@@ -1,3 +1,4 @@
+BETA_BIN_NAME = d0-001
 
 datachannel:
 	 em++ datachannel.cpp $(STDS) -llibdatachannel-wasm -fPIC -m64 -flto -flto=thin -pipe -ffp-contract=fast -fexcess-precision=fast \
