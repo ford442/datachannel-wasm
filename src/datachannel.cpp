@@ -1,6 +1,8 @@
 #include <emscripten.h>
 #include <emscripten/bind.h>
 
+#include "../wasm/include/rtc/rtc.hpp"
+
 int main(){
   
 rtc::Preload();
